@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b27">
+  <meta name="description" content="Islamic Psycho-Pedagogical Learning Lab — laboratorium pembelajaran PAI berbasis psikologi pendidikan Islam.">
+  <title>IPPL Lab | Islamic Psycho-Pedagogical Learning Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.5/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="IPPL Lab beranda">
+        <span class="brand-mark">IP</span>
+        <span><b>IPPL <em>LAB</em></b><small>LEARNING ENVIRONMENT</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav">
+        <a class="nav-link active" href="#home" data-page="home"><span>⌂</span> Beranda</a>
+        <a class="nav-link" href="#motivation" data-page="motivation"><span>✳</span> Motivasi Belajar</a>
+        <a class="nav-link" href="#ar" data-page="ar"><span>◇</span> AR Explorer</a>
+        <a class="nav-link" href="#vr" data-page="vr"><span>◉</span> VR Simulation</a>
+        <a class="nav-link" href="#companion" data-page="companion"><span>✧</span> AI Companion</a>
+        <a class="nav-link" href="#planner" data-page="planner"><span>▤</span> Learning Planner</a>
+        <a class="nav-link" href="#reflection" data-page="reflection"><span>✎</span> Reflection Journal</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-label">LEARNING MODEL</div>
+        <div class="mirai-mini">
+          <div><i>M</i><span>Motivation</span></div><div><i>I</i><span>Immersion</span></div>
+          <div><i>R</i><span>Regulation</span></div><div><i>A</i><span>AI Scaffolding</span></div>
+          <div><i>I</i><span>Improvement</span></div>
+        </div>
+        <div class="sidebar-note">Belajar dengan kesadaran, bertumbuh dengan nilai.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+        <div class="breadcrumb">LEARNING SPACE <span>/</span> <b id="crumb">Beranda</b></div>
+        <div class="top-right"><span class="status-dot"></span><span>Prototype v1.0</span><div class="avatar">A</div></div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="pulse"></span> ISLAMIC PSYCHO-PEDAGOGICAL LEARNING LAB</div>
+            <h1>Belajar bukan sekadar memahami. <span>Belajar adalah bertumbuh.</span></h1>
+            <p>Ruang belajar interaktif untuk mengembangkan motivasi, kemandirian, dan regulasi diri dalam pembelajaran Pendidikan Agama Islam.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-go="motivation">Mulai pengalaman belajar <b>↗</b></button>
+              <button class="btn btn-ghost" data-go="planner">Susun rencana belajar</button>
+            </div>
+            <div class="hero-meta"><span>✦</span> Motivation-led · Immersive · Reflective · Adaptive</div>
+          </div>
+          <div class="hero-art">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="art-core"><div class="core-symbol">م</div><small>ILMU · NIAT · AMAL</small></div>
+            <div class="float-card fc-one"><span class="fc-icon">✦</span><div><b>Self-regulated</b><small>Learning journey</small></div></div>
+            <div class="float-card fc-two"><span class="fc-icon">◈</span><div><b>Meaningful learning</b><small>Islamic values</small></div></div>
+            <div class="art-caption">MIRAI LEARNING MODEL <span>01 — 05</span></div>
+          </div>
+        </div>
+
+        <div class="section-head"><div><div class="eyebrow dark">YOUR LEARNING SPACE</div><h2>Mulai dari mana hari ini?</h2></div><span class="muted">Pilih pengalaman belajar</span></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-green" data-go="motivation"><div class="feature-icon">✳</div><div class="feature-tag">01 / MOTIVATION</div><h3>Kenali motivasi</h3><p>Petakan kesiapan, tujuan, dan hambatan belajar.</p><span class="card-arrow">↗</span></article>
+          <article class="feature-card feature-sand" data-go="ar"><div class="feature-icon">◇</div><div class="feature-tag">02 / IMMERSION</div><h3>Jelajahi konsep</h3><p>Amati representasi 3D nilai dan konsep pembelajaran.</p><span class="card-arrow">↗</span></article>
+          <article class="feature-card feature-lilac" data-go="vr"><div class="feature-icon">◉</div><div class="feature-tag">03 / SIMULATION</div><h3>Alami situasi</h3><p>Latih pengambilan keputusan dalam skenario belajar.</p><span class="card-arrow">↗</span></article>
+          <article class="feature-card feature-blue" data-go="companion"><div class="feature-icon">✧</div><div class="feature-tag">04 / AI SCAFFOLDING</div><h3>Dialog reflektif</h3><p>Dapatkan pertanyaan pemantik dan umpan balik belajar.</p><span class="card-arrow">↗</span></article>
+        </div>
+
+        <div class="bottom-grid">
+          <div class="panel mirai-panel"><div class="panel-top"><div><div class="eyebrow dark">THE FRAMEWORK</div><h3>Model pembelajaran MIRAI</h3></div><span class="pill">5 tahapan</span></div>
+            <div class="mirai-flow">
+              <div><b>M</b><span>Motivation</span><small>Aktivasi tujuan</small></div><i>→</i><div><b>I</b><span>Immersion</span><small>Eksplorasi</small></div><i>→</i><div><b>R</b><span>Regulation</span><small>Strategi belajar</small></div><i>→</i><div><b>A</b><span>AI Scaffolding</span><small>Umpan balik</small></div><i>→</i><div><b>I</b><span>Improvement</span><small>Refleksi</small></div>
+            </div>
+          </div>
+          <div class="quote-panel"><div class="quote-mark">“</div><p>Sesungguhnya Allah tidak mengubah keadaan suatu kaum hingga mereka mengubah keadaan yang ada pada diri mereka sendiri.</p><small>QS. Ar-Ra'd: 11 · Refleksi tentang ikhtiar dan perubahan</small></div>
+        </div>
+        <footer>IPPL LAB <span>·</span> Laboratorium Pembelajaran PAI Berbasis Psikologi Pendidikan Islam</footer>
+      </section>
+
+      <section class="page" id="page-motivation">
+        <div class="page-intro"><div class="eyebrow dark">M / MOTIVATION ACTIVATION</div><h1>Kenali kondisi belajarmu.</h1><p>Kesadaran terhadap tujuan, keyakinan diri, dan hambatan menjadi titik awal regulasi belajar.</p></div>
+        <div class="two-col">
+          <div class="panel"><div class="panel-top"><h3>Check-in motivasi</h3><span class="pill">Refleksi awal</span></div>
+            <label class="field-label" for="goal">Apa tujuan belajar yang ingin kamu capai?</label><textarea id="goal" placeholder="Contoh: memahami konsep regulasi diri dan menerapkannya dalam pembelajaran PAI..."></textarea>
+            <label class="field-label">Seberapa yakin kamu dapat mencapainya?</label><div class="range-row"><input type="range" min="1" max="10" value="6" id="confidence"><b id="confidenceVal">6/10</b></div>
+            <label class="field-label" for="barrier">Apa hambatan terbesar saat ini?</label><select id="barrier"><option value="">Pilih hambatan</option><option>Menunda pekerjaan</option><option>Sulit berkonsentrasi</option><option>Belum memahami materi</option><option>Kurang percaya diri</option><option>Kesulitan mengatur waktu</option><option>Motivasi mudah berubah</option></select>
+            <button class="btn btn-primary" id="saveCheckin">Simpan refleksi awal <b>↗</b></button>
+            <div class="feedback-box hidden" id="checkinFeedback"></div>
+          </div>
+          <div class="panel soft-panel"><div class="eyebrow dark">PSYCHOLOGICAL INSIGHT</div><h3>Motivasi dapat dilatih.</h3><p class="muted">Motivasi belajar bukan hanya soal semangat. Ia berkaitan dengan tujuan, nilai yang dirasakan, harapan keberhasilan, dan pengalaman belajar.</p>
+            <div class="insight-item"><span>01</span><div><b>Tujuan yang bermakna</b><small>Hubungkan aktivitas belajar dengan tujuan pribadi dan tanggung jawab.</small></div></div>
+            <div class="insight-item"><span>02</span><div><b>Efikasi diri</b><small>Bangun keyakinan melalui target kecil dan pengalaman keberhasilan.</small></div></div>
+            <div class="insight-item"><span>03</span><div><b>Kesadaran hambatan</b><small>Kenali pemicu, lalu pilih strategi yang realistis.</small></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-ar">
+        <div class="page-intro"><div class="eyebrow dark">I / IMMERSIVE EXPLORATION</div><h1>AR Learning Explorer.</h1><p>Eksplorasi objek 3D dan makna pedagogis melalui pengalaman visual interaktif.</p></div>
+        <div class="two-col ar-layout">
+          <div class="panel"><div class="panel-top"><h3>Ruang eksplorasi AR</h3><span class="pill">Camera experience</span></div>
+            <div class="ar-stage" id="arStage"><div class="ar-placeholder"><div class="ar-cube">◇</div><b>Jelajahi konsep melalui AR</b><small>Aktifkan kamera, lalu arahkan ke marker Hiro.</small><button class="btn btn-primary" id="startAR">Aktifkan kamera AR</button><span class="tiny">Izin kamera diperlukan. Gunakan HTTPS dan perangkat yang mendukung.</span></div></div>
+            <p class="tiny muted">Marker Hiro dapat dicetak atau dibuka dari <a href="https://ar-js-org.github.io/AR.js/data/images/hiro.png" target="_blank" rel="noreferrer">tautan marker Hiro</a> pada perangkat lain.</p>
+          </div>
+          <div class="panel soft-panel"><div class="eyebrow dark">LEARNING PROMPT</div><h3>Apa yang dapat dipelajari?</h3><p>Gunakan representasi visual sebagai pemantik untuk menghubungkan konsep, pengalaman, dan nilai.</p>
+            <div class="concept-card"><span class="concept-number">01</span><div><b>Niat dan tujuan</b><p>Bagaimana niat memengaruhi arah dan ketekunan belajar?</p></div></div>
+            <div class="concept-card"><span class="concept-number">02</span><div><b>Ikhtiar dan strategi</b><p>Mengapa tujuan perlu disertai strategi dan pemantauan?</p></div></div>
+            <div class="concept-card"><span class="concept-number">03</span><div><b>Muhasabah</b><p>Bagaimana refleksi membantu memperbaiki proses belajar?</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-vr">
+        <div class="page-intro"><div class="eyebrow dark">I / IMMERSIVE SIMULATION</div><h1>VR Learning Simulation.</h1><p>Masuki skenario pembelajaran dan latih keputusan secara kontekstual.</p></div>
+        <div class="panel"><div class="panel-top"><h3>Simulasi: ruang belajar calon guru PAI</h3><span class="pill">Scenario 01</span></div>
+          <div class="scenario-grid"><div class="scenario-copy"><div class="scenario-label">SITUASI</div><h2>Ketika motivasi belajar menurun.</h2><p>Kamu sedang menyiapkan rancangan pembelajaran PAI. Tenggat semakin dekat, beberapa tugas menumpuk, dan kamu mulai kehilangan fokus.</p><div class="scenario-question">Apa langkah pertama yang paling tepat?</div>
+            <div class="choice-list" id="choices">
+              <button class="choice" data-choice="A"><b>A</b><span>Menunggu motivasi kembali sebelum mulai bekerja.</span></button>
+              <button class="choice" data-choice="B"><b>B</b><span>Menetapkan prioritas, memecah tugas, dan memulai dari langkah kecil.</span></button>
+              <button class="choice" data-choice="C"><b>C</b><span>Mengerjakan semua tugas sekaligus tanpa perencanaan.</span></button>
+            </div><div class="feedback-box hidden" id="scenarioFeedback"></div>
+          </div><div class="vr-visual"><div class="vr-window"><div class="vr-sky"></div><div class="vr-sun"></div><div class="vr-room"><div class="vr-board">LEARNING SPACE</div><div class="vr-desk"></div><div class="vr-book">PAI</div><div class="vr-chair"></div></div><div class="vr-overlay"><span>360° LEARNING ENVIRONMENT</span><b>VR</b></div></div><small class="tiny">Visualisasi ruang belajar 3D bergaya ilustratif.</small></div></div>
+          <button class="btn btn-dark" id="enterVR">Buka ruang VR interaktif ↗</button>
+          <div class="vr-container hidden" id="vrContainer"><a-scene embedded vr-mode-ui="enabled: true" style="height:360px;width:100%;border-radius:14px;overflow:hidden"><a-sky color="#dce9e2"></a-sky><a-plane rotation="-90 0 0" width="18" height="18" color="#b7c8b9"></a-plane><a-box position="0 1.4 -3" width="3" height="1.2" depth=".15" color="#244a3e"></a-box><a-text value="RUANG BELAJAR PAI" position="-1.25 1.45 -2.89" color="#ffffff" width="4"></a-text><a-box position="0 .6 -2" width="2" height=".12" depth=".8" color="#a87950"></a-box><a-cylinder position="0 .3 -1.7" radius=".06" height=".6" color="#73543e"></a-cylinder><a-box position="-2 1 -4" width=".7" height="1.4" depth=".12" color="#d4b77d"></a-box><a-text value="NIAT  •  IKHTIAR  •  MUHASABAH" position="-2.8 1.1 -3.9" color="#244a3e" width="5"></a-text><a-entity position="0 1.6 0"><a-camera wasd-controls look-controls></a-camera></a-entity></a-scene></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-companion">
+        <div class="page-intro"><div class="eyebrow dark">A / AI SCAFFOLDING</div><h1>AI Learning Companion.</h1><p>Teman dialog untuk membantu mengurai masalah, menguji pemahaman, dan merencanakan strategi belajar.</p></div>
+        <div class="chat-panel panel"><div class="chat-head"><div class="ai-avatar">✧</div><div><b>IPPL Learning Companion</b><small><span class="status-dot"></span> Mode demonstrasi · respons kurasi lokal</small></div><span class="pill">MIRAI / A</span></div>
+          <div class="chat-messages" id="chatMessages"><div class="message ai"><span class="message-avatar">✧</span><div><small>LEARNING COMPANION</small><p>Assalamu'alaikum! Saya dapat membantu kamu merefleksikan proses belajar. Apa tantangan belajar yang sedang kamu hadapi?</p></div></div></div>
+          <div class="prompt-chips"><button data-prompt="Saya sering menunda tugas kuliah. Apa strategi awal yang bisa saya lakukan?">Saya sering menunda tugas</button><button data-prompt="Bagaimana cara menjaga motivasi belajar PAI?">Menjaga motivasi</button><button data-prompt="Bantu saya membuat target belajar yang realistis.">Membuat target belajar</button></div>
+          <form id="chatForm" class="chat-input"><input id="chatInput" placeholder="Tuliskan refleksi atau pertanyaan..." autocomplete="off"><button class="send-btn" aria-label="Kirim pesan">➤</button></form>
+          <p class="tiny chat-disclaimer">Catatan: ini prototipe dengan respons demonstrasi, bukan layanan AI generatif yang terhubung ke API. Hindari memasukkan data pribadi atau sensitif.</p>
+        </div>
+      </section>
+
+      <section class="page" id="page-planner">
+        <div class="page-intro"><div class="eyebrow dark">R / REGULATION PRACTICE</div><h1>Learning Planner.</h1><p>Ubah tujuan menjadi langkah konkret, terukur, dan dapat dievaluasi.</p></div>
+        <div class="two-col">
+          <div class="panel"><div class="panel-top"><h3>Rencana belajar pribadi</h3><span class="pill">Weekly focus</span></div>
+            <label class="field-label" for="planTitle">Target belajar</label><input class="text-input" id="planTitle" placeholder="Contoh: memahami teori self-regulated learning">
+            <div class="form-row"><div><label class="field-label" for="planDay">Hari</label><select id="planDay"><option>Senin</option><option>Selasa</option><option>Rabu</option><option>Kamis</option><option>Jumat</option><option>Sabtu</option><option>Minggu</option></select></div><div><label class="field-label" for="planTime">Durasi</label><select id="planTime"><option>25 menit</option><option>30 menit</option><option>45 menit</option><option>60 menit</option><option>90 menit</option></select></div></div>
+            <label class="field-label" for="planStrategy">Strategi yang akan digunakan</label><textarea id="planStrategy" placeholder="Contoh: membaca 5 halaman, membuat peta konsep, lalu menjelaskan kembali..."></textarea>
+            <button class="btn btn-primary" id="addPlan">Tambahkan ke rencana <b>+</b></button>
+          </div>
+          <div class="panel soft-panel"><div class="panel-top"><h3>Daftar komitmen</h3><span class="pill" id="planCount">0 target</span></div><div id="planList" class="plan-list"><div class="empty-state">Belum ada target. Mulai dengan satu langkah kecil.</div></div><div class="progress-wrap"><div class="progress-label"><span>Progress mingguan</span><b id="progressText">0%</b></div><div class="progress-track"><div id="progressBar"></div></div></div></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-reflection">
+        <div class="page-intro"><div class="eyebrow dark">I / IMPROVEMENT & REFLECTION</div><h1>Reflection Journal.</h1><p>Berhenti sejenak, membaca pengalaman, dan menentukan perbaikan berikutnya.</p></div>
+        <div class="two-col">
+          <div class="panel"><div class="panel-top"><h3>Catatan muhasabah belajar</h3><span class="pill">After learning</span></div>
+            <label class="field-label" for="reflection1">Apa hal penting yang saya pelajari hari ini?</label><textarea id="reflection1" placeholder="Tuliskan pemahaman atau pengalaman baru..."></textarea>
+            <label class="field-label" for="reflection2">Strategi apa yang berjalan baik atau perlu diperbaiki?</label><textarea id="reflection2" placeholder="Identifikasi strategi yang efektif dan hambatannya..."></textarea>
+            <label class="field-label" for="reflection3">Apa satu tindakan nyata berikutnya?</label><textarea id="reflection3" placeholder="Tentukan satu langkah yang dapat dilakukan..."></textarea>
+            <button class="btn btn-primary" id="saveReflection">Simpan jurnal refleksi <b>↗</b></button><div class="feedback-box hidden" id="reflectionFeedback"></div>
+          </div>
+          <div class="panel soft-panel"><div class="eyebrow dark">REFLECTIVE CYCLE</div><h3>Refleksi sebagai kebiasaan.</h3><div class="cycle"><div><b>01</b><span>Pengalaman</span></div><i>↓</i><div><b>02</b><span>Kesadaran</span></div><i>↓</i><div><b>03</b><span>Evaluasi</span></div><i>↓</i><div><b>04</b><span>Perbaikan</span></div></div><p class="muted tiny">Jurnal tersimpan pada penyimpanan lokal browser yang sedang digunakan. Data tidak otomatis tersinkron ke perangkat lain.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
